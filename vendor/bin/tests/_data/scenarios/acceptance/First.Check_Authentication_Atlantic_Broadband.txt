@@ -1,0 +1,15 @@
+
+#php vendor/bin/codecept generate:scenarios
+
+I WANT TO CHECK_AUTHENTICATION_ATLANTIC_BROADBAND
+
+I am on page '/' 
+I click 'html body div#body-container form input' 
+I select option '//*[@id="dropdownlist"]',"$Client" 
+I click '.btn' 
+I fillfield '//*[@id="username"]',"$Username" 
+I fillfield '//*[@id="password"]',"$Password" 
+I click '//*[@id="login"]' 
+I wait "5" 
+I see in title 'SAML 2.0 SP Demo Example'
+

@@ -1,0 +1,13 @@
+{
+    "require-dev": {
+    },
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.6",
+        "monolog/monolog": "^1.24",
+		"symfony/symfony": "4.1.*",
+        "symfony/process": "4.1.*",
+        "codeception/robo-paracept": "dev-master",
+        "codeception/codeception": "^2.5"
+    }
+   
+}

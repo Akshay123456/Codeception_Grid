@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<database>
+  <client>
+    <name lang="en">Atlantic Broadband (auth.atlanticbb.net)</name>
+    <username>syn11@atlanticbb.net</username>
+    <password>syn@cortest</password>
+  </client>
+  <client>
+    <name lang="en">Cable Co (cableco.auth-gateway.net)</name>
+    <username>tvesuccess</username>
+    <password>test1234</password>
+  </client>
+</database>

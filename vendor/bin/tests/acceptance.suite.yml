@@ -1,0 +1,89 @@
+# Codeception Test Suite Configuration
+#
+# Suite for acceptance tests.
+# Perform tests in browser using the WebDriver or PhpBrowser.
+# If you need both WebDriver and PHPBrowser tests - create a separate suite.
+
+actor: AcceptanceTester
+# modules:
+#     enabled:
+#          - WebDriver:
+#              url: 'https://sp.synacor.net/saml/module.php/core/authenticate.php'
+#              window_size: maximize
+#              host: 10.90.114.188
+#              port: 4444
+#              browser: chrome
+#              capabilities:
+#                  chromeOptions: # additional chrome options
+#                  binary: "Chromedriver.exe"
+
+
+env:
+  env_1:
+        extensions:
+              enabled:
+                  - Codeception\Extension\RunProcess:
+                      1: java -jar C:\Codeception_Test\selenium-server-standalone-3.141.59.jar
+                      sleep: 15 # wait 5 seconds for processes to boot
+        modules:
+              enabled:
+               - WebDriver:
+                        url: 'https://sp.synacor.net/saml/module.php/core/authenticate.php'
+                        window_size: maximize
+                        host: 10.90.114.188
+                        port: 4444
+                        browser: chrome
+                        capabilities:
+                             chromeOptions: # additional chrome options
+                             binary: "Chromedriver.exe"
+                                  
+  env_2:
+    extensions:
+        enabled:
+        - Codeception\Extension\RunProcess:
+            1: java -jar C:\selenium-server-standalone-3.8.1.jar -enablePassThrough false
+            sleep: 15 # wait 5 seconds for processes to boot
+    modules:
+        enabled:
+            - WebDriver:           
+                url: 'https://sp.synacor.net/saml/module.php/core/authenticate.php'
+                window_size: maximize
+                host : 10.90.114.188 
+                port: 4444
+                browser: 'firefox'
+                capabilities:
+                    binary: "C:/geckodriver.exe"
+                    acceptInsecureCerts: true
+                
+    
+          
+
+
+
+
+# extensions:
+#     enabled:
+#         - Codeception\Extension\RunFailed
+#         - Codeception\Extension\Logger
+#         - Codeception\Extension\Recorder:
+#               delete_successful: false
+
+
+# extensions:
+#   - Codeception\Extension\RunProcess:
+#   - java -jar C:\selenium-server-standalone-3.141.59.jar
+#   - sleep: 10
+                 
+                 
+
+       
+# modules:
+#     enabled:
+#          - WebDriver:
+#              url: 'https://sp.synacor.net/saml/module.php/core/authenticate.php'
+#              window_size: maximize # disabled in firefoxDriver
+#              port: 4444
+#              browser: firefox
+#              capabilities:
+#                  firefoxOptions: # additional firefox options
+#                  binary: "C:/geckodriver.exe"
