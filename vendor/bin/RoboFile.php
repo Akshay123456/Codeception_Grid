@@ -14,21 +14,21 @@ class RoboFile extends \Robo\Tasks
     public function parallelSplitTests()
     {
     	// Split your tests by files
-        $this->taskSplitTestFilesByGroups(2)
+        /*$this->taskSplitTestFilesByGroups(2)
             ->projectRoot('.')
             ->testsFrom('tests/acceptance')
              ->groupsTo('tests/_data/paracept_')
-            ->run();
+            ->run();*/
 
 
-        /*
+        
         // Split your tests by single tests (alternatively)
         $this->taskSplitTestsByGroups(5)
             ->projectRoot('.')
             ->testsFrom('tests/acceptance')
             ->groupsTo('tests/_data/paracept_')
             ->run();
-        */
+        
     }
 
     public function parallelRun()

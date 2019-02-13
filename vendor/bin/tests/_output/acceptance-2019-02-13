@@ -1,0 +1,5 @@
+[2019-02-13 10:07:27] tests\acceptance\FirstCest.php.INFO: ------------------------------------ [] []
+[2019-02-13 10:07:27] tests\acceptance\FirstCest.php.INFO: STARTED: FirstCest: Check_authentication_atlantic_broadband [] []
+[2019-02-13 10:07:27] tests\acceptance\FirstCest.php.ALERT: Call to undefined method AcceptanceTester::amOnPage [] []
+[2019-02-13 10:07:27] tests\acceptance\FirstCest.php.INFO: # ERROR # [] []
+[2019-02-13 10:07:27] tests\acceptance\FirstCest.php.INFO: PASSED [] []

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="acceptance (env_1)" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="60.276999">
-    <testcase file="C:\Codecept_Grid\vendor\bin\tests\acceptance\FirstCest.php" name="Check_Authentication_Atlantic_Broadband" class="FirstCest" feature="check_authentication_atlantic_broadband" assertions="1" time="60.276999"/>
+  <testsuite name="acceptance (env_1)" tests="1" assertions="0" errors="1" failures="0" skipped="0" time="0.000000">
+    <testcase file="C:\Codecept_Grid\vendor\bin\tests\acceptance\FirstCest.php" name="Check_Authentication_Atlantic_Broadband" class="FirstCest" feature="check_authentication_atlantic_broadband" assertions="0" time="0.000000"/>
   </testsuite>
 </testsuites>

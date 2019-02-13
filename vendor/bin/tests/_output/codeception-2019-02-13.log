@@ -1,0 +1,3 @@
+[2019-02-13 10:01:51] Codeception.ALERT: Can't connect to Webdriver at http://10.90.114.188:4444/wd/hub. Please make sure that Selenium Server or PhantomJS is running.  
+[2019-02-13 10:01:51] Codeception.INFO: # ERROR #  
+[2019-02-13 10:01:51] Codeception.INFO: PASSED  

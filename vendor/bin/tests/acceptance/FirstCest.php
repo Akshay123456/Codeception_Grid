@@ -12,14 +12,9 @@ class FirstCest
 
     }
 
-    public function _after(AcceptanceTester $I)
-    {
-
-    }
-
    public function Check_Authentication_Atlantic_Broadband(AcceptanceTester $I)
 	{
-		{
+		
 			$I->amOnPage('/');
 			$I->click('html body div#body-container form input');
 			$I->selectOption('//*[@id="dropdownlist"]','Atlantic Broadband (auth.atlanticbb.net)');
@@ -30,9 +25,14 @@ class FirstCest
 			$I->click('//*[@id="login"]'); 
 			$I->wait(10);
 			$I->seeInTitle('SAML 2.0 SP Demo Example');
-		}
+		
 	}		
 
+	public function _after(AcceptanceTester $I)
+    {
+
+
+    }
 }
 
   
